@@ -1,0 +1,36 @@
+POST  http://localhost:3000/login
+    Content-Type: application/json
+
+    {
+        "email":"daiva@daiva.lt",
+        "password":"secret122"
+    }
+###
+post http://localhost:3000/register
+ Content-Type: application/json
+
+    {
+        "email":"dai@dai.lt",
+        "password":"secret122"
+    }
+###
+http://localhost:3000/users
+###
+http://localhost:3000/user-tutorials/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjQ3MjY0OTM0LCJleHAiOjE2NDcyNjg1MzR9.vq-lhJ0DoSq82a-OiEqWrFpx4dTHBSFc_-RIWz6dnL0
+###
+http://localhost:3000/tutorials
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjQ3MjY0OTM0LCJleHAiOjE2NDcyNjg1MzR9.vq-lhJ0DoSq82a-OiEqWrFpx4dTHBSFc_-RIWz6dnL0
+###
+http://localhost:3000/tutorials
+###
+post http://localhost:3000/tutorials
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjQ3MjY0OTM0LCJleHAiOjE2NDcyNjg1MzR9.vq-lhJ0DoSq82a-OiEqWrFpx4dTHBSFc_-RIWz6dnL0
+
+{
+    "title": "authorised",
+    "content": "authorised labai idomus straipsnis",
+    "private": true
+}
+ 
